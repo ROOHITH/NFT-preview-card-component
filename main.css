@@ -1,0 +1,162 @@
+/* Layout */
+/* Colors */
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+/* Typography */
+body {
+  font-size: 18px; /* Body Copy Font Size */
+  font-family: "Outfit", sans-serif; /* Body Copy Font Family */
+  font-weight: 400; /* Default Font Weight */
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+/* Adjust font weights if needed */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+.centered-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--very-dark-blue-card-bg);
+  padding: 17px;
+}
+.img {
+  width: 220px;
+  border-radius: 7px;
+}
+.head {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.head:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+p {
+  color: var(--soft-blue);
+  font-size: 13px;
+  width: 205px;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.eth-text {
+  font-size: 12px;
+opacity: .9;
+  color: var(--cyan);
+}
+.mr-right {
+  margin-right: 4px;
+}
+.img-height {
+  height: 13px;
+}
+
+.clock-text{
+    font-size: 12px;
+opacity: .9;
+color: var(--soft-blue);
+}
+hr{
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 16px; 
+    background-color: var(--very-dark-blue-line);
+}
+.name-text,.text-create{
+font-size: 11px;
+
+}
+.text-create{
+    opacity: .9;
+    color: var(--soft-blue);
+}
+.name-text{
+color: var(--white);
+opacity: .7;
+}
+.name-text:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.avtar-img{
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+  
+.img-view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 35px;
+    
+
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size: cover;
+    transition: all 0.3s;
+  }
+  
+  .img-view {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    transition: all 0.3s;
+  }
+  .image-container:hover .img {
+    background-image: linear-gradient(0deg, hsl(178deg 100% 50% / 37%), hsla(178, 100%, 50%, 0.7)), url(./images/image-equilibrium.jpg);  
+}
+.image-container:hover .img-view {
+    visibility: visible;
+}
+  
+  
+
+@media (max-width: 375px) {
+  /* Mobile Styles */
+  /* Adjust layout styles for mobile devices */
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  /* Tablet and Desktop Styles */
+  /* Adjust layout styles for tablet and desktop devices */
+}
